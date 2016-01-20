@@ -1,0 +1,8 @@
+---
+title: Welcome to Middleman
+---
+
+.welcome
+  h1 = data.common.text.header
+  - data.common.items.each do |i|
+    = partial "_item", :locals => {i: i}
