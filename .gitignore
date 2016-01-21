@@ -1,3 +1,4 @@
+build/
 coverage/
 node_modules/
 vendor/
@@ -6,3 +7,4 @@ vendor/
 npm-debug.log
 .bundle/
 Gemfile.lock
+source/javascripts/

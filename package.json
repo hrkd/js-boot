@@ -11,7 +11,6 @@
     "browserify": "^13.0.0",
     "browserify-istanbul": "^0.2.1",
     "espowerify": "^1.0.0",
-    "gulp": "^3.9.0",
     "intelli-espower-loader": "^1.0.1",
     "jquery": "^2.2.0",
     "karma": "^0.13.19",
@@ -21,12 +20,16 @@
     "karma-mocha": "^0.2.1",
     "karma-mocha-debug": "^0.1.2",
     "karma-mocha-reporter": "^1.1.5",
+    "karma-sinon": "^1.0.4",
     "mocha": "^2.3.4",
     "power-assert": "^1.2.0",
-    "vinyl-source-stream": "^1.1.0"
+    "sinon": "^1.17.2",
+    "watch": "^0.17.1"
   },
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "build:js": "browserify js-source/main.js > source/javascripts/all.js",
+    "watch": "watch 'npm run build:js' js-source/"
   },
   "author": "",
   "license": "ISC"
