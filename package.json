@@ -26,6 +26,8 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
+    "build": "browserify js-source/main.js > source/javascripts/all.js",
+    "watch": "watch 'npm run build' js-source/",
     "test": "karma start"
   },
   "author": "",
