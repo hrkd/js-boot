@@ -23,13 +23,13 @@
     "karma-sinon": "^1.0.4",
     "mocha": "^2.3.4",
     "power-assert": "^1.2.0",
-    "sinon": "^1.17.2",
+    "vinyl-source-stream": "^1.1.0",
     "watch": "^0.17.1"
   },
   "scripts": {
-    "test": "karma start",
-    "build:js": "browserify js-source/main.js > source/javascripts/all.js",
-    "watch": "watch 'npm run build:js' js-source/"
+    "build": "browserify js-source/main.js > ./.tmp/javascripts/all.js",
+    "watch": "watch 'npm run build' js-source/ -du",
+    "test": "karma start"
   },
   "author": "",
   "license": "ISC"

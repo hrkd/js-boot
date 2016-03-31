@@ -4,11 +4,11 @@
   },
   "items": [
     {
-      "body":"Read Online Documentation",
+      "body":"item01",
       "link":"http://middlemanapp.com/"
     },
     {
-      "body":"Read Online Documentation",
+      "body":"item02",
       "link":"http://middlemanapp.com/"
     }
   ]

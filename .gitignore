@@ -1,3 +1,5 @@
+.tmp/
+.sass-cache/
 build/
 coverage/
 node_modules/
@@ -7,4 +9,3 @@ vendor/
 npm-debug.log
 .bundle/
 Gemfile.lock
-source/javascripts/
