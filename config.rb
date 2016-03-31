@@ -24,7 +24,9 @@ page '/*.txt', layout: false
 
 # Reload the browser automatically whenever files change
 configure :development do
-  activate :livereload
+  activate :livereload, ignore: [
+    /js-source\//
+  ]
 end
 
 # Methods defined in the helpers block are available in templates
@@ -54,4 +56,9 @@ activate :deploy do |deploy|
   deploy.clean = true # remove orphaned files on remote host, default: false
   # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
 end
+
+activate :external_pipeline,
+  name: :browserify,
+  command: build? ? "npm run build":"npm run watch",
+  source: "./.tmp/"
 

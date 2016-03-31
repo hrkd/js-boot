@@ -23,11 +23,12 @@
     "karma-mocha-reporter": "^1.1.5",
     "mocha": "^2.3.4",
     "power-assert": "^1.2.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "watch": "^0.17.1"
   },
   "scripts": {
-    "build": "browserify js-source/main.js > source/javascripts/all.js",
-    "watch": "watch 'npm run build' js-source/",
+    "build": "browserify js-source/main.js > ./.tmp/javascripts/all.js",
+    "watch": "watch 'npm run build' js-source/ -du",
     "test": "karma start"
   },
   "author": "",
