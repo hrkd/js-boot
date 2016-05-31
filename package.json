@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "directories": {
-    "test": "spec/"
-  },
-  "devDependencies": {
+  "dependencies": {
     "browserify": "^13.0.0",
     "browserify-istanbul": "^0.2.1",
     "espowerify": "^1.0.0",
@@ -30,9 +26,12 @@
     "watch": "^0.17.1",
     "woothee": "^1.3.0"
   },
+  "directories": {
+    "test": "spec/"
+  },
   "scripts": {
-    "build": "browserify js-source/main.js > ./.tmp/javascripts/all.js",
-    "watch": "watch 'npm run build' js-source/ -du",
+    "build": "browserify source/javascript/main.js > build/javascript/all.js",
+    "watch": "watch 'npm run build' source/ -du",
     "test": "karma start"
   },
   "author": "",
