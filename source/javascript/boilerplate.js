@@ -2,7 +2,7 @@
 'use strict';
 
 var Class = function(s) {
-  console.log('const eclass.');
+  console.log('const class.');
 };
 
 //shortcut
@@ -16,7 +16,5 @@ p.publicMethod = function(){
 function privateMethod(){
 }
 
-module.exports = (function() {
-  return Class;
-})();
+module.exports = Class;
 })();
