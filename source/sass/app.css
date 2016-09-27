@@ -1,0 +1,13 @@
+.test {
+  color: red;
+}
+
+.t {
+  color: red;
+}
+
+.myContainer {
+  :global(.image) {
+    width: 100%;
+  }
+}

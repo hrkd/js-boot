@@ -1,7 +1,8 @@
 'use strict';
-import swiper from 'swiper';
-import App from './app';
-import Init from'./Init.jsx';
+import styles from '../sass/app.css'
+import swiper from 'swiper'
+import App    from './app'
+import Init   from './Init'
 
 ;(function(){
 //import
@@ -13,6 +14,7 @@ class Main {
     //init
     const init = new Init();
     init.refresh();
+    console.log(styles);
   }
 };
 

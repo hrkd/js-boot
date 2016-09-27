@@ -3,13 +3,10 @@ import AppView from './view/AppView.jsx'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Wrapper from './view/Wrapper.jsx'
-
 import FileManager from './utils/FileManager'
-
 import {connect, Provider } from 'react-redux'
 
 ;(function(){
-
 class Init extends AppView {
   constructor(){
     super();
@@ -86,7 +83,5 @@ const AppContainer = connect(
   mapDispatchToProps
 )(Wrapper);
 
-
 module.exports = Init;
-
 })();
