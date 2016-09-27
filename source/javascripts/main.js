@@ -12,9 +12,9 @@ import Init   from './Init'
 class Main {
   constructor(s){
     //init
+    console.log(styles);
     const init = new Init();
     init.refresh();
-    console.log(styles);
   }
 };
 

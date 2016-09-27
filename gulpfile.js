@@ -1,10 +1,9 @@
 var gulp         = require('gulp');
-var webpack      = require('gulp-webpack');
+var webpack      = require('webpack-stream');
 var swig         = require('gulp-swig');
 var sass         = require('gulp-sass');
 var autoprefixer = require("gulp-autoprefixer");
 var plumber      = require('gulp-plumber');
-var prettify     = require('gulp-prettify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 
@@ -40,7 +39,9 @@ gulp.task('sass',function(){
 });
 
 gulp.task('webpack', function(){
-  webpack(require('./webpack.config.js'))
+  gulp.src('')
+    .pipe(webpack(require('./webpack.config.js')))
+    .pipe(gulp.dest('./.dist/javascripts/'));
 });
 
 
